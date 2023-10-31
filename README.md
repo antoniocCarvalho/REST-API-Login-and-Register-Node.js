@@ -5,9 +5,9 @@
 ## Project Status: completed
 
 ## Libraries Used
-* dotenv  [https://github.com/motdotla/dotenv]
-* Express [https://github.com/zagaris/express-api]
-  
+* [dotenv](https://github.com/motdotla/dotenv)
+* [Express](https://github.com/expressjs/express)
+
 ## Installation
 1. Download or clone this repo.
 2. Enter to the project directory.
