@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+
+ }
+ #linhaNavBar{
+  position: absolute;
+  height: 6px;
+  margin-top: 10%;
+  background-color:#1c5560;
+  width:100%;  
+}
+
+
+.usuario-flex{
+  
+  width: 5%;
+  margin-left: 80%;
+  ;
+}
+
+
+#nome{
+margin-left: 80%;
+
+}
+
