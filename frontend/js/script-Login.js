@@ -1,5 +1,5 @@
 // const ??? = document.querySelector('')
-const transpecialUsuarios = async () => {
+const UsuariosAPI = async () => {
     const res = await fetch('http://localhost:3001/usuarios')
     const usuario = await res.json()
 
@@ -29,23 +29,6 @@ const validarUsuario = async (event) => {
     });
   
     // Verificar
-    // if (resposta.status === 200) {
-    //   const mensagem = await resposta.text();
-    //   alert("Usuário válido")
-    //   window.location.href = '/frontend/pages/index.html';
-    //   console.log(`Usuário válido: ${mensagem}`);
-    //   abrirInicial()
-
-
-    // module.exports = dados
-
-    // } else {
-    //   alert("Usuário inválido") 
-    //   console.log('Usuário inválido');
-
-    // }
-
-
 
     const data = await resposta.json();
     const nomeDoUsuario = data;
@@ -55,27 +38,19 @@ const validarUsuario = async (event) => {
  
     
     if (resposta.status === 200) {
-     alert(nomeDoUsuario)
+     alert('bem vindo ', nomeDoUsuario)
 
-
-     var nomeInicial = document.getElementById("nome");
-      nomeInicial.innerHTML = nomeDoUsuario;
-      // abrirInicial()
 
     } else {
       alert("Usuário inválido");
       console.log('Erro:', data.error);
     }
     
-  
-
 
 }
 
 
-
-
-
+//é utilizada abrir determinada pagina caso o login for realizado
 const abrirInicial = () => {
 
   window.location.href = '/frontend/pages/index.html';
@@ -90,7 +65,7 @@ loginForm.addEventListener('submit', (event) => {
     event.preventDefault(); 
 
     validarUsuario(event); 
-    transpecialUsuarios(event)
+    UsuariosAPI(event)
 });
 
 
